@@ -9,25 +9,9 @@ import main.java.SortAlgos;
 import main.java.SortDemoData;
 
 public class AlgoTest {
-
 	
-//	@Test
-//	public void testBubbleSort() {
-//		Item a[] = new Item[5];
-//		a[0] = new Item(5);
-//		a[1] = new Item(1);
-//		a[2] = new Item(9);
-//		a[3] = new Item(50);
-//		a[4] = new Item(12);
-//		SortAlgos.bubbleSort(a);
-//		int b[] = new int[5];
-//		for (int i =0; i<b.length; i++)
-//		{
-//			b[i] = a[i].key;
-//		}
-//		int res[] = new int[] {1, 5, 9, 12, 50};
-//		Assert.assertArrayEquals(b, res);
-//	}
+	// This method tests for an Average array sequence ( i.e random elements in an array)
+	// This covers Node, Condition  and Edge Coverage
 	
 	@Test
 	public void testBubbleSort() {
@@ -46,12 +30,18 @@ public class AlgoTest {
 		assertTrue(arr.myArray[4].key == arr1.myArray[4].key );
 	}
 	
+	// This method tests for a Null array sequence
+	// This covers Node, Condition  and Edge Coverage
+	
 	@Test  (expected=java.lang.NullPointerException.class)
 	public void arrayBubbleSortNull() {
 		SortDemoData arr = new SortDemoData();
 		
 		SortAlgos.bubbleSort(arr.myArray);
 	}
+	
+	// This method tests for an Average array sequence ( i.e random elements in an array)
+	// This covers Node, Condition  and Edge Coverage
 	
 	@Test
 	public void testInsertionSort() {
@@ -70,12 +60,18 @@ public class AlgoTest {
 		assertTrue(arr.myArray[4].key == arr1.myArray[4].key );
 	}
 	
+	// This method tests for a Null array sequence
+	// This covers Node, Condition  and Edge Coverage
+	
 	@Test  (expected=java.lang.NullPointerException.class)
 	public void arrayInsertionSortNull() {
 		SortDemoData arr = new SortDemoData();
 		
 		SortAlgos.insertionSort(arr.myArray);
 	}
+	
+	// This method tests for an Average array sequence ( i.e random elements in an array)
+	// This covers Node, Condition  and Edge Coverage
 	
 	@Test
 	public void testHeapSort() {
@@ -94,12 +90,18 @@ public class AlgoTest {
 		assertTrue(arr.myArray[4].key == arr1.myArray[4].key );
 	}
 	
+	// This method tests for a Null array sequence
+	// This covers Node, Condition  and Edge Coverage
+	
 	@Test  (expected=java.lang.NullPointerException.class)
 	public void arrayHeapSortNull() {
 		SortDemoData arr = new SortDemoData();
 		
 		SortAlgos.heapSort(arr.myArray);
 	}
+	
+	// This method tests for an Average array sequence ( i.e random elements in an array)
+	// This covers Node, Condition  and Edge Coverage
 	
 	@Test
 	public void testquickSort() {
@@ -118,12 +120,18 @@ public class AlgoTest {
 		assertTrue(arr.myArray[4].key == arr1.myArray[4].key );
 	}
 	
+	// This method tests for a Null array sequence
+	// This covers Node, Condition  and Edge Coverage
+	
 	@Test  (expected=java.lang.NullPointerException.class)
 	public void arrayquickSortNull() {
 		SortDemoData arr = new SortDemoData();
 		
 		SortAlgos.quickSort(arr.myArray);
 	}
+	
+	// This method tests for an Average array sequence ( i.e random elements in an array)
+	// This covers Node, Condition  and Edge Coverage
 	
 	@Test
 	public void testmergeSort() {
@@ -142,12 +150,18 @@ public class AlgoTest {
 		assertTrue(arr.myArray[4].key == arr1.myArray[4].key );
 	}
 	
+	// This method tests for a Null array sequence
+	// This covers Node, Condition  and Edge Coverage
+	
 	@Test  (expected=java.lang.NullPointerException.class)
 	public void arraymergeSortNull() {
 		SortDemoData arr = new SortDemoData();
 		
 		SortAlgos.mergeSort(arr.myArray);
 	}
+	
+	// This method tests for an Average array sequence ( i.e random elements in an array)
+	// This covers Node, Condition  and Edge Coverage
 	
 	@Test
 	public void testselectionSort() {
@@ -165,6 +179,9 @@ public class AlgoTest {
 		assertTrue(arr.myArray[3].key == arr1.myArray[3].key );
 		assertTrue(arr.myArray[4].key == arr1.myArray[4].key );
 	}
+	
+	// This method tests for a Null array sequence
+	// This covers Node, Condition  and Edge Coverage
 	
 	@Test  (expected=java.lang.NullPointerException.class)
 	public void arrayselectionSortNull() {
